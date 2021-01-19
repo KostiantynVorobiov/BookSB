@@ -11,19 +11,19 @@
         <table border="0" cellpadding="5">
             <tr>
                 <td>Name: </td>
-                <td><form:input path="name" /></td>
+                <td><form:input path="name" placeholder="Name"/></td>
             </tr>
             <tr>
                 <td>Author: </td>
-                <td><form:input path="author" /></td>
+                <td><form:input path="author" placeholder="Author"/></td>
             </tr>
             <tr>
                 <td>Date Of Issue: </td>
-                <td><form:input path="dateOfIssue" /></td>
+                <td><form:input path="dateOfIssue" placeholder="Day.Month.Year"/></td>
             </tr>
             <tr>
                 <td>Price: </td>
-                <td><form:input path="price" /></td>
+                <td><form:input path="price" placeholder="Price"/></td>
             </tr>
             <tr>
                 <td colspan="2"><input type="submit" value="Save"></td>
