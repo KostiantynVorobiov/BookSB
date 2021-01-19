@@ -5,7 +5,6 @@ import com.book.web.model.dto.BookRequestDto;
 import com.book.web.model.dto.BookResponseDto;
 import com.book.web.service.BookService;
 import com.book.web.service.mapper.BookMapper;
-import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,26 +25,6 @@ public class BookController {
     public BookController(BookService bookService, BookMapper bookMapper) {
         this.bookService = bookService;
         this.bookMapper = bookMapper;
-    }
-
-    @GetMapping("/inject")
-    public String inject() {
-        Book kobzar = new Book();
-        kobzar.setAuthor("Shevshenko");
-        kobzar.setName("Kobzar");
-        kobzar.setDateOfIssue(LocalDate.of(1860, 03, 03));
-        kobzar.setPrice(150.50);
-        //bookRepo.addBook(kobzar);
-        bookService.create(kobzar);
-
-        Book bibliya = new Book();
-        bibliya.setAuthor("Matveyu");
-        bibliya.setName("Bibliya");
-        bibliya.setDateOfIssue(LocalDate.of(5, 01, 07));
-        bibliya.setPrice(10000000.99);
-        //bookRepo.addBook(bibliya);
-        bookService.create(bibliya);
-        return "book/ok";
     }
 
     @GetMapping("/new")
