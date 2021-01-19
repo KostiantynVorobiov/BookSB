@@ -10,19 +10,19 @@
     <form:form action="${pageContext.request.contextPath}/book" method="POST" modelAttribute="book">
         <table border="0" cellpadding="5">
             <tr>
-                <td>Name: </td>
+                <td>Name:</td>
                 <td><form:input path="name" placeholder="Name"/></td>
             </tr>
             <tr>
-                <td>Author: </td>
+                <td>Author:</td>
                 <td><form:input path="author" placeholder="Author"/></td>
             </tr>
             <tr>
-                <td>Date Of Issue: </td>
+                <td>Date Of Issue:</td>
                 <td><form:input path="dateOfIssue" placeholder="Day.Month.Year"/></td>
             </tr>
             <tr>
-                <td>Price: </td>
+                <td>Price:</td>
                 <td><form:input path="price" placeholder="Price"/></td>
             </tr>
             <tr>

@@ -3,16 +3,15 @@ package com.book.web.service.mapper;
 import com.book.web.model.Book;
 import com.book.web.model.dto.BookRequestDto;
 import com.book.web.model.dto.BookResponseDto;
-import org.springframework.stereotype.Service;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import org.springframework.stereotype.Service;
 
 @Service
 public class BookMapper {
     static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d.MM.yyyy");
 
-    public Book mapToModel(BookRequestDto bookRequestDto){
+    public Book mapToModel(BookRequestDto bookRequestDto) {
         Book book = new Book();
         book.setName(bookRequestDto.getName());
         book.setAuthor(bookRequestDto.getAuthor());

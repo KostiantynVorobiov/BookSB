@@ -2,8 +2,6 @@ package com.book.web.model.dto;
 
 import lombok.Data;
 
-import java.time.LocalDate;
-
 @Data
 public class BookResponseDto {
     private Long id;

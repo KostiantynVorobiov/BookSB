@@ -2,13 +2,12 @@ package com.book.web.service;
 
 import com.book.web.model.Book;
 import com.book.web.repository.BookRepository;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
-public class BookServiceImpl implements BookService{
+public class BookServiceImpl implements BookService {
     private final BookRepository bookRepository;
 
     @Autowired
